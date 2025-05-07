@@ -1,29 +1,48 @@
+# 本日のおしながき<!-- omit in toc -->
+- [Next.jsってなーに？](#nextjsってなーに)
+  - [勉強するぞ！！！！！](#勉強するぞ)
+- [ReactとNect.jsについて](#reactとnectjsについて)
+- [UIのレンダリング](#uiのレンダリング)
+- [JavascriptでUIを更新する](#javascriptでuiを更新する)
+  - [HTMLとDOMのちがい](#htmlとdomのちがい)
+  - [命令型プログラミングと宣言型プログラミング](#命令型プログラミングと宣言型プログラミング)
+  - [React: 宣言型UIライブラリ](#react-宣言型uiライブラリ)
+- [Reactを始めよう](#reactを始めよう)
+- [コンポーネントを使ったUIの構築](#コンポーネントを使ったuiの構築)
+  - [Compornents（構成要素）](#compornents構成要素)
+  - [Nest compornents](#nest-compornents)
+- [実際にやってみた](#実際にやってみた)
+
+
+
 # Next.jsってなーに？
 >Next.js（ネクストジェイエス）は、Node.js上に構築されたオープンソースのWebアプリケーションフレームワークであり、サーバーサイドスクリプトや静的Webサイトの生成などの、ReactベースのWebアプリケーション開発を提供する。  
 >(出典: フリー百科事典『ウィキペディア（Wikipedia）』)  
   
-ん，わからん．まずNode.jsって何？なんかすごいいろいろできるらしい？
+ん，わからん．なんかすごいいろいろできるらしい？
 
 ## 勉強するぞ！！！！！
 
-**Next.js**ってなに！？！？！？
+**Next.js**ってなに！？！？！？！？！？！？！？！？！？！？！？
 
 そうだ勉強しよう．
 
 公式チュートリアルを読むことが上達の近道なので，  
-公式チュートリアル読む→実際になんか作ってみる(最終的にポートフォリオサイトつくれたらいいな！)   
+公式チュートリアル読む→実際になんか作ってみる
+
+(最終的にポートフォリオサイトつくれたらいいな！)   
 
 ってのをやっていくよ．  
 ↓  
 [神サイト(React Foundations)](https://nextjs.org/learn/react-foundations)
 
 
-# 読む．
+
 
 javascript，htmlはギリ読めるからReact勉強したらなんとかなりそう...？  
 とりあえず読んでわかったことを要約しつつ読むよ．
 
-## ReactとNect.jsについて
+# ReactとNect.jsについて
 
 [第1章 ReactとNext.jsについて](https://nextjs.org/learn/react-foundations/what-is-react-and-nextjs)    
 
@@ -34,10 +53,11 @@ javascript，htmlはギリ読めるからReact勉強したらなんとかなり�
 ウェブアプリケーションを作る時にラクできる． 
 具体例がないとわかんないけど，そんな感じかな．
 
-**追記**  
-簡単にいうとコンポーネントを関数として扱うやつだったーー！！多分そこらへんわかる人は４章ぐらいから読んでもいいかも！
+>[!TIP]
+>簡単にいうとコンポーネントを関数として扱うやつだったーー！！  
+多分そこらへんわかる人は４章ぐらいから読んでもいいかも！
 
-## UIのレンダリング
+# UIのレンダリング
 
 [第2章 ユーザーインターフェース（UI）のレンダリング](https://nextjs.org/learn/react-foundations/rendering-ui)    
 
@@ -57,7 +77,7 @@ javascript，htmlはギリ読めるからReact勉強したらなんとかなり�
   ...らしい．
 DOMとHTMLの違いは，料理済みか料理前か，とかかな？
 
-## JavascriptでUIを更新する
+# JavascriptでUIを更新する
 
 [第3章 JavascriptでUIを更新する](https://nextjs.org/learn/react-foundations/updating-ui-with-javascript)    
 
@@ -133,6 +153,8 @@ DOMとHTMLの違いは，料理済みか料理前か，とかかな？
 
 </details>
 
+
+
 ...いい感じに復習できた！  
 DOMメソッドを使って，`H1`エレメントを作るよ！
 ```html
@@ -177,14 +199,14 @@ app.appendChild(header);
 
 こんな感じの動作だね．
 
-### HTMLとDOMのちがい
+## HTMLとDOMのちがい
 
 ![diffalent dom and html](.\image1\image6.png)
 
 けっこーちがう．DOMに`h1`エレメントが入ってて，作成したHTMLファイルと違う．  
 HTMLが初期のページコンテンツを表すのに対し、DOMは記述したJavaScriptコードによって変更された更新されたページコンテンツを表すから．
 
-### 命令型プログラミングと宣言型プログラミング
+## 命令型プログラミングと宣言型プログラミング
 
 さっき書いたコードはUIの更新手順を記述してるから，命令型プログラミング．
 基本的に，UIの構築は命令型ではなく宣言型の方が好まれるらしい．（開発プロセスをスピードアップできるから）  
@@ -192,13 +214,13 @@ DOMメソッドを記述する代わりに、開発者が表示したいもの�
 
 >"言い換えれば、命令型プログラミングはシェフにピザの作り方をステップバイステップで指示するようなものです。宣言型プログラミングは、ピザを作る手順を気にせずにピザを注文するようなものです。🍕"
 
-### React: 宣言型UIライブラリ
+## React: 宣言型UIライブラリ
 
 開発者は、ユーザーインターフェースに何が起きてほしいかを React に伝えると、React が開発者に代わって DOM を更新する手順を判断してくれるらしい．．．  
 
 宣言型でラクなのがReactってことだね
 
-## Reactを始めよう
+# Reactを始めよう
 
 [第4章 Reactを始めよう](https://nextjs.org/learn/react-foundations/getting-started-with-react)
 
@@ -212,7 +234,7 @@ unpkg = "UNiversal PacKaGe"なんだって（へ～）
 
 閑話休題．  
 
-今回読み込むのは２つ．`react`と`react-dom`．`react`はReactのコアライブラリ．`react-dom`はReactをDOMで使えるようにするDOM固有のメソッドを帝京してくれるやつ．さっきのコードに追加してみよー  
+今回読み込むのは２つ．`react`と`react-dom`．`react`はReactのコアライブラリ．`react-dom`はReactをDOMで使えるようにするDOM固有のメソッドを帝京してくれるやつ．さっきのコードに追加してみよー 
 
 ```html
 <html>
@@ -296,7 +318,7 @@ JSXだから，エラーが出る．BabelみたいなJavascriptコンパイラ�
 **めっちゃコードの量消えてる！！しかもわかりやすい！！**  
 Reactサイコー！！！  
 
-## コンポーネントを使ったUIの構築
+# コンポーネントを使ったUIの構築
 [第5章 コンポーネントを使ったUIの構築](https://nextjs.org/learn/react-foundations/building-ui-with-components)
 
 だんだん疲れてきました！いったんここでラスト！  
@@ -306,7 +328,7 @@ Reactサイコー！！！
 >・ Props  
 >・ State  
 
-### Compornents（構成要素）
+## Compornents（構成要素）
 要するに，写真，文字，ボタンをモジュール化して，追加，更新，削除できるような形式にするのがコンポーネントっぽい．
 
 Reactだと，コンポーネントは関数として書けるみたい．
@@ -326,7 +348,7 @@ Reactだと，コンポーネントは関数として書けるみたい．
 こんな感じ．UI=関数って考え方．
 
 
-### Nest compornents 
+## Nest compornents 
 なんか嫌な予感がします．むずそう．
 
 > アプリケーションには通常、単一のコンポーネントよりも多くのコンテンツが含まれます。Reactコンポーネントは、通常のHTML要素と同様に、互いにネストすることができます。
@@ -383,7 +405,9 @@ HomePageの中に，Headerをネストしてる．（ページの中にヘッダ
 ```
 ![6_index.html](.\image1\image10.png)
 
-てことは...？
+できてる～
+
+# 実際にやってみた
 ```html
 <!DOCTYPE html>
 <html lang="ja">
