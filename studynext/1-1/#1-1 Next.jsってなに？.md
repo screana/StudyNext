@@ -61,12 +61,12 @@ javascript，htmlはギリ読めるからReact勉強したらなんとかなり�
 
 [第2章 ユーザーインターフェース（UI）のレンダリング](https://nextjs.org/learn/react-foundations/rendering-ui)    
 
-![HTML-DOM](.\image1\image.png)
+![HTML-DOM](./image1/image.png)
 
 知ってるのキターーーーーー！でもDOMってなんだ？
 
 
-![aboutDOM](.\image1\image2.png)
+![aboutDOM](./image1/image2.png)
 
 神サイトすぎる！！！要するに，  
 
@@ -147,8 +147,8 @@ DOMとHTMLの違いは，料理済みか料理前か，とかかな？
   </html>
   ```
   ちょっとめんどくさいけど，ボタンを押したら変わるやつ．  
-  ![GetElement_demo1](.\image1\image3.png)
-  ![GetElement_demo2](.\image1\image4.png)  
+  ![GetElement_demo1](./image1/image3.png)
+  ![GetElement_demo2](./image1/image4.png)  
   こんな感じ！  復習終わり！
 
 </details>
@@ -182,7 +182,7 @@ DOMメソッドを使って，`H1`エレメントを作るよ！
 </html>
 ```
 
-![実行結果](.\image1\image5.png)
+![実行結果](./image1/image5.png)
 
 文字列(`text`)を`creatTextNode()`で画面に表示できる文字データに変換してる．  
 前に定義した`h1`タグに`headercontent`を`append`(くっつける)ことをして，   
@@ -201,7 +201,7 @@ app.appendChild(header);
 
 ## HTMLとDOMのちがい
 
-![diffalent dom and html](.\image1\image6.png)
+![diffalent dom and html](./image1/image6.png)
 
 けっこーちがう．DOMに`h1`エレメントが入ってて，作成したHTMLファイルと違う．  
 HTMLが初期のページコンテンツを表すのに対し、DOMは記述したJavaScriptコードによって変更された更新されたページコンテンツを表すから．
@@ -292,7 +292,7 @@ JSXだから，エラーが出る．BabelみたいなJavascriptコンパイラ�
 </html>
 ```
 こう！  
-![動作確認2](.\image1\image7.png)
+![動作確認2](./image1/image7.png)
 動作確認ヨシ！  
 
 比較してみよ～  
@@ -369,7 +369,7 @@ function HomePage() {
 const root = ReactDOM.createRoot(app);
 root.render(<Header />);
 ```
-![compornent tree](.\image1\image9.png)
+![compornent tree](./image1/image9.png)
 
 HomePageの中に，Headerをネストしてる．（ページの中にヘッダーを表示する構造）
 意外と難しくないかも．Homepageが最上位コンポーネントになったから，`root.render()`メソッドに渡すように変えて，実際に動く感じにするとー
@@ -403,7 +403,7 @@ HomePageの中に，Headerをネストしてる．（ページの中にヘッダ
   </body>
 </html>
 ```
-![6_index.html](.\image1\image10.png)
+![6_index.html](./image1/image10.png)
 
 できてる～
 
@@ -445,7 +445,7 @@ HomePageの中に，Headerをネストしてる．（ページの中にヘッダ
 </html>
 ```
 
-![お試し版](.\image1\image8.png)  
+![お試し版](./image1/image8.png)  
 おっおっおっ(^ω^≡^ω^)  
 
 いいねいいね！まだ関数１個しか作ってないけど，いい感じかも！！（はやい）
